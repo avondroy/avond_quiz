@@ -6,13 +6,14 @@
     <title>Quiz by Avond Studio</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body >
+<body class="max-w-[1920px]">
 
     <!-- Title Section -->
     <section class="px-6 py-32 md:px-16 md:py-24 h-screen flex transition-all" style="background-color: #F6F9FF;">
         <div class="grid grid-cols-1 md:grid-cols-3 items-center m-auto">
             <div class="md:col-span-2">
-                <p class="text-lg font-medium mb-2 text-[#0030FF]">Always A Fun Quiz</p>
+                <p class="text-lg font-bold mb-2 text-[#0030FF] " style="transform: rotate(345deg); margin-left: 3.8vw;;">A Fun</p>
+                <p class="text-lg font-bold mb-2 text-[#0030FF] " style="margin-top: 15vh">Always <span class="line-through">Avond</span> Quiz</p>
                 <h1 class="text-5xl font-bold text-[#0030FF] leading-[7vh] md:leading-[11vh]">Find out what movie is your brand in six steps!</h1>
             </div>
             <div class="flex gap-3 justify-start md:justify-end mt-10 md:mt-0">
@@ -30,20 +31,22 @@
         <ol class="list-decimal list-inside">
 
             <!-- START : Number 1 -->
-            <li class="text-2xl grid md:grid-cols-2">
-                <div class="flex">
-                    <p class="text-[#2551CF]">1.</p>
-                    <h2 class="ml-2 md:pr-[19vw] text-[#2551CF]">You’re about to start a brand (whether it's business or personal branding), how will you start?</h2>
+            <li class="text-2xl grid md:grid-cols-3">
+                <div class="flex col-span-2">
+                    <p class="text-[#2551CF] text-4xl">1.</p>
+                    <h2 class="ml-2 md:pr-[7.3vw] text-[#2551CF] text-4xl">You’re about to start a brand (whether it's business or personal branding), how will you start?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-9 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
                 <div class="relative">
                     <input type="radio" id="num1a" name="num1" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num1a" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-[#b5cd69] dark:hover:border-[#b5cd69] transition-all border-[4px] border-[#D2FF3A] h-full">                           
-                        <div class="block">
-                            <div class="w-full text-lg">Start thinking out names for my brand.</div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto ">
+                        <div class="grid grid-cols-1 justify-between content-between">
+                            <div class="w-full text-lg">
+                                <p class="text-2xl">Start thinking out names for my brand.</p>
+                            </div>
+                            <img src="./images/icon3.png" alt="" class="w-48 h-auto mx-auto ">
 
                         </div>
                         
@@ -53,9 +56,11 @@
                 <div class="relative">
                     <input type="radio" id="num1b" name="num1" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num1b" class="inline-flex  justify-between w-full p-5 text-white bg-[#2551CF]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#2551CF] dark:hover:bg-gray-700 transition-all border-[4px] border-[#2551CF] h-full">                           
+                    <label for="num1b" class="inline-flex  justify-between w-full p-5 text-white bg-[#123666]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#123666] dark:hover:bg-gray-700 transition-all border-[4px] border-[#123666] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Research for my ‘brand’ positioning first. What’s the current market is like, or my rivals.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Research for my ‘brand’ positioning first. What’s the current market is like, or my rivals.</p>
+                            </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto ">
                         </div>
                         
@@ -67,7 +72,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num1c" class="inline-flex  justify-between w-full p-5 text-white bg-[#637AA4]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-white dark:bg-[#637AA4] dark:hover:bg-gray-700 transition-all border-[4px] border-[#637AA4] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Develop story and values that aligns with personal values beliefs.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Develop story and values that aligns with personal values beliefs.</p>
+                            </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right">
                             
                         </div>
@@ -81,17 +88,19 @@
             <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 <div></div>
                 <div class="flex">
-                    <p class="text-[#123666]">2.</p>
-                    <h2 class="text-[#123666] ml-2 pr-[19vw]">Uh-oh! You’ve got a problem. How do you solve it?</h2>
+                    <p class="text-[#123666] text-4xl">2.</p>
+                    <h2 class="text-[#123666] ml-2 pr-[7.3vw] text-4xl">Uh-oh! You’ve got a problem. How do you solve it?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-9 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
                 <div class="relative">
                     <input type="radio" id="num2a" name="num2" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num2a" class="inline-flex  justify-between w-full p-5 text-white bg-[#637AA4]  rounded-lg cursor-pointer dark:hover:text-white    hover:bg-gray-100 dark:text-white dark:bg-[#637AA4] dark:hover:bg-gray-400 dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#637AA4] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg">Try to find and fix the root of the problem as fast as possible.</div>
+                            <div class="w-full text-lg">
+                                <p class="text-2xl">Try to find and fix the root of the problem as fast as possible.</p>
+                            </div>
                             <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
 
                         </div>
@@ -104,7 +113,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num2b" class="inline-flex  justify-between w-full p-5 text-black bg-[#EACCCA]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-black dark:bg-[#EACCCA] dark:hover:bg-gray-700 transition-all border-[4px] border-[#EACCCA] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Focus on damage control first. My brand image is the most important</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Focus on damage control first. My brand image is the most important</p>
+                            </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
                         
@@ -116,7 +127,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num2c" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-gray-700 transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Find a way to avoid the problem.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Find a way to avoid the problem.</p>
+                            </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
                         </div>
@@ -130,8 +143,8 @@
             <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 
                 <div class="flex">
-                    <p class="text-[#0092FB]">3.</p>
-                    <h2 class="text-[#0092FB] ml-2 ">What will be your main product or service or brand unique aspect?</h2>
+                    <p class="text-[#0092FB] text-4xl">3.</p>
+                    <h2 class="text-[#0092FB] ml-2 text-4xl">What will be your main product or service or brand unique aspect?</h2>
                 </div>
                 <div class="mt-[8vh] md:mt-0">
                     <img src="./images/vector1.png" alt="" class="w-[50vw] md:w-[15vw] ml-[8vw]">
@@ -143,7 +156,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num3a" class="inline-flex  justify-between w-full p-5 text-black bg-[#ECE7E3]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#ECE7E3] dark:hover:bg-gray-400 dark:hover:border-gray-bg-gray-400 transition-all border-[4px] border-[#ECE7E3] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg">High-quality product designed by experts and specialists.</div>
+                            <div class="w-full text-lg">
+                                <p class="text-2xl">High-quality product designed by experts and specialists.</p>
+                            </div>
                             <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
 
                         </div>
@@ -156,7 +171,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num3b" class="inline-flex  justify-between w-full p-5 text-white bg-[#0092FB]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#0092FB] dark:hover:bg-gray-700 transition-all border-[4px] border-[#0092FB] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Creative and out of the box concept and visual.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Creative and out of the box concept and visual.</p>
+                            </div>
                             <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
 
                         </div>
@@ -169,7 +186,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num3c" class="inline-flex  justify-between w-full p-5 text-white bg-[#123666]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-white dark:bg-[#123666] dark:hover:bg-gray-700 transition-all border-[4px] border-[#123666] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">My ‘brand’ can help people to be better or solve their problems in life.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">My ‘brand’ can help people to be better or solve their problems in life.</p>
+                            </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
                         </div>
@@ -183,17 +202,19 @@
             <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 <div></div>
                 <div class="flex">
-                    <p class="text-[#637AA4]">4.</p>
-                    <h2 class="text-[#637AA4] ml-2 pr-[19vw]">You’re thinking of adding a team member, what do you look for the most?</h2>
+                    <p class="text-[#637AA4] text-4xl">4.</p>
+                    <h2 class="text-[#637AA4] ml-2 pr-[7.3vw] text-4xl">You’re thinking of adding a team member, what do you look for the most?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-9 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
                 <div class="relative">
                     <input type="radio" id="num4a" name="num4" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num4a" class="inline-flex  justify-between w-full p-5 text-black bg-[#0092FB]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#0092FB] dark:hover:bg-gray-400 dark:hover:border-gray-4bg-gray-400 transition-all border-[4px] border-[#0092FB] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg">They have to be creative and can think out side the box for solutions.</div>
+                            <div class="w-full text-lg">
+                                <p class="text-2xl">They have to be creative and can think out side the box for solutions.</p>
+                            </div>
                             <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
 
                         </div>
@@ -206,7 +227,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num4b" class="inline-flex  justify-between w-full p-5 text-white bg-[#123666]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#123666] dark:hover:bg-gray-700 transition-all border-[4px] border-[#123666] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Skills and experience are number one.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Skills and experience are number one.</p>
+                            </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
                         
@@ -218,7 +241,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num4c" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-gray-700 transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Young, fresh, and motivated.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Young, fresh, and motivated.</p>
+                            </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
                         </div>
@@ -231,11 +256,11 @@
             <!-- START : Number 5 -->
             <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw] relative z-20">
                 <div class="flex">
-                    <p class="text-[#2551CF]">5.</p>
-                    <h2 class="text-[#2551CF] ml-2 "> What do you think will be the biggest challenge in managing your brand?</h2>
+                    <p class="text-[#2551CF] text-4xl">5.</p>
+                    <h2 class="text-[#2551CF] ml-2 text-4xl"> What do you think will be the biggest challenge in managing your brand?</h2>
                 </div>
 
-                <div class="mt-[7vh] md:mt-0">
+                <div class="mt-[9vh] md:mt-0">
                     <img src="./images/vector2.png" alt="" class="w-[50vw] md:w-[12vw] ml-[8vw]">
                 </div>
             </li>
@@ -245,7 +270,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num5a" class="inline-flex  justify-between w-full p-5 text-black bg-[#EACCCA]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#EACCCA] dark:hover:bg-gray-400 dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#EACCCA] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg">Being forced to ‘sell out’ by joining the trend.</div>
+                            <div class="w-full text-lg">
+                                <p class="text-2xl">Being forced to ‘sell out’ by joining the trend.</p>
+                            </div>
                             <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
 
                         </div>
@@ -258,7 +285,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num5b" class="inline-flex  justify-between w-full p-5 text-white bg-[#02076F]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#02076F] dark:hover:bg-gray-700 transition-all border-[4px] border-[#02076F] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">To get my audience to have high level of trust in  my brand and products or services.</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">To get my audience to have high level of trust in  my brand and products or services.</p>
+                            </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
                         
@@ -270,7 +299,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num5c" class="inline-flex  justify-between w-full p-5 text-black bg-[#CED5EF]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-black dark:bg-[#CED5EF] dark:hover:bg-gray-700 transition-all border-[4px] border-[#CED5EF] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Create the best team for the greatest result</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Create the best team for the greatest result</p>
+                            </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
                         </div>
@@ -284,17 +315,19 @@
             <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 <div></div>
                 <div class="flex">
-                    <p class="text-[#02076F]">6.</p>
-                    <h2 class="text-[#02076F] ml-2 pr-[8vw]">Congrats! Your ‘brand’ took off successfully. How will you measure success?</h2>
+                    <p class="text-[#02076F] text-4xl">6.</p>
+                    <h2 class="text-[#02076F] ml-2 pr-[8vw] text-4xl">Congrats! Your ‘brand’ took off successfully. How will you measure success?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-9 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
                 <div class="relative">
                     <input type="radio" id="num6a" name="num6" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num6a" class="inline-flex  justify-between w-full p-5 text-black bg-[#CED5EF]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#CED5EF] dark:hover:bg-gray-400 dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#CED5EF] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg">Being acknowledged as credible and also trustworthy</div>
+                            <div class="w-full text-lg">
+                                <p class="text-2xl">Being acknowledged as credible and also trustworthy</p>
+                            </div>
                             <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible ">
 
                         </div>
@@ -307,7 +340,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num6b" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-gray-700 transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">High brand awareness, everyone knows my brand</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">High brand awareness, everyone knows my brand</p>
+                            </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
                         
@@ -319,7 +354,9 @@
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
                     <label for="num6c" class="inline-flex  justify-between w-full p-5 text-white bg-[#02076F]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-white dark:bg-[#02076F] dark:hover:bg-gray-700 transition-all border-[4px] border-[#02076F] h-full">                           
                         <div class="block">
-                            <div class="w-full text-lg text-justify">Making an impact on the world and people</div>
+                            <div class="w-full text-lg ">
+                                <p class="text-2xl">Making an impact on the world and people</p>
+                            </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
                         </div>

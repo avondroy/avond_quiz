@@ -4,6 +4,9 @@ module.exports = {
     "./**/*.{html,js}"
   ],
   theme: {
+    fontFamily: {
+      'dm' : ['DM Sans']
+    },
     extend: {},
   },
   plugins: [],
