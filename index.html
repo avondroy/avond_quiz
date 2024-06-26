@@ -6,20 +6,20 @@
     <title>Quiz by Avond Studio</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="max-w-[1920px]">
+<body class=" bg-[#F6F9FF]">
 
     <!-- Title Section -->
-    <section class="px-6 py-32 md:px-16 md:py-24 h-screen flex transition-all" style="background-color: #F6F9FF;">
+    <section class="px-6 py-32 md:px-[6.4vw] md:py-[9.6vh] h-screen flex transition-all" style="background-color: #F6F9FF;">
         <div class="grid grid-cols-1 md:grid-cols-3 items-center m-auto">
             <div class="md:col-span-2">
-                <p class="text-lg font-bold mb-2 text-[#0030FF] " style="transform: rotate(345deg); margin-left: 3.8vw;;">A Fun</p>
-                <p class="text-lg font-bold mb-2 text-[#0030FF] " style="margin-top: 15vh">Always <span class="line-through">Avond</span> Quiz</p>
-                <h1 class="text-5xl font-bold text-[#0030FF] leading-[7vh] md:leading-[11vh]">Find out what movie is your brand in six steps!</h1>
+                <p class="text-lg font-bold mb-2 text-[#0030FF] ml-[17vw] md:ml-[5vw] md:text-[1.6vw]" style="transform: rotate(345deg);">A Fun</p>
+                <p class="text-lg font-bold mb-2 text-[#0030FF]  md:text-[1.6vw] mt-[4vh] md:mt-[17vh]" >Always <span class="line-through">Avond</span> Quiz</p>
+                <h1 class="text-5xl md:text-[4.8vw] font-bold text-[#0030FF] leading-[7vh] md:leading-[11vh]">Find out what movie is your brand in six steps!</h1>
             </div>
             <div class="flex gap-3 justify-start md:justify-end mt-10 md:mt-0">
                 <!-- <a href="" class="px-5 py-3 text-sm text-[#0030FF] border-2 rounded-3xl font-bold border-[#0030FF] hover:bg-[#D2FF3A] hover:text-black transition-colors">Let’s Get Started</a> -->
-                <button class="px-4 py-4 rounded-full bg-[#0030FF] hover:bg-[#637AA4] transition-colors" id="start" onclick="startQuiz()">
-                    <img src="./images/play.png" alt="" class="w-4 h-4">
+                <button class="md:px-[1.4vw] md:py-[1.4vw] px-4 py-4 rounded-full bg-[#0030FF] hover:bg-[#637AA4] transition-colors" id="start" onclick="startQuiz()">
+                    <img src="./images/play.png" alt="" class="md:w-[1.6vw] w-4 h-4 md:h-auto">
                 </button>
             </div>
         </div>
@@ -27,26 +27,26 @@
 
     <!-- Question Section -->
 
-    <section class="px-6 py-3 md:px-16 md:py-24 hidden" id="question" style="background-color: #F6F9FF;">
+    <section class="px-6 py-32 md:px-[6.4vw] md:py-[9.6vh] hidden" id="question" style="background-color: #F6F9FF;">
         <ol class="list-decimal list-inside">
 
             <!-- START : Number 1 -->
             <li class="text-2xl grid md:grid-cols-3">
                 <div class="flex col-span-2">
-                    <p class="text-[#2551CF] text-4xl">1.</p>
-                    <h2 class="ml-2 md:pr-[7.3vw] text-[#2551CF] text-4xl">You’re about to start a brand (whether it's business or personal branding), how will you start?</h2>
+                    <p class="text-[#2551CF] text-4xl md:text-[3vw] md:leading-[8vh]">1.</p>
+                    <h2 class="ml-2 md:pr-[7.3vw] text-[#2551CF] text-4xl md:text-[3vw] md:leading-[8vh]">You’re about to start a brand (whether it's business or personal branding), how will you start?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 md:mt-[6.4vh] mt-16 gap-5 md:gap-[1.5vw] items-stretch">
                 <div class="relative">
                     <input type="radio" id="num1a" name="num1" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num1a" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-[#b5cd69] dark:hover:border-[#b5cd69] transition-all border-[4px] border-[#D2FF3A] h-full">                           
+                    <label for="num1a" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#D2FF3A] rounded-lg md:rounded-[2.5vw] cursor-pointer dark:hover:text-black     dark:text-black dark:bg-[#D2FF3A]   transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="grid grid-cols-1 justify-between content-between">
                             <div class="w-full text-lg">
-                                <p class="text-2xl">Start thinking out names for my brand.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Start thinking out names for my brand.</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-48 h-auto mx-auto ">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto ">
 
                         </div>
                         
@@ -56,12 +56,12 @@
                 <div class="relative">
                     <input type="radio" id="num1b" name="num1" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num1b" class="inline-flex  justify-between w-full p-5 text-white bg-[#123666]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#123666] dark:hover:bg-gray-700 transition-all border-[4px] border-[#123666] h-full">                           
-                        <div class="block">
+                    <label for="num1b" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#123666]  rounded-lg md:rounded-[2.5vw] cursor-pointer    dark:text-white dark:bg-[#123666]  transition-all border-[4px] border-[#123666] h-full">                           
+                        <div class=" grid grid-cols-1 content-between justify-between">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Research for my ‘brand’ positioning first. What’s the current market is like, or my rivals.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Research for my ‘brand’ positioning first. What’s the current market is like, or my rivals.</p>
                             </div>
-                            <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto ">
+                            <img src="./images/icon1.png" alt="" class="w-20 md:w-[10vw] md:h-auto h-auto ml-auto ">
                         </div>
                         
                     </label>
@@ -70,12 +70,12 @@
                 <div class="relative">
                     <input type="radio" id="num1c" name="num1" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num1c" class="inline-flex  justify-between w-full p-5 text-white bg-[#637AA4]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-white dark:bg-[#637AA4] dark:hover:bg-gray-700 transition-all border-[4px] border-[#637AA4] h-full">                           
-                        <div class="block">
+                    <label for="num1c" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#637AA4]  rounded-lg md:rounded-[2.5vw] cursor-pointer   500   dark:text-white dark:bg-[#637AA4]  transition-all border-[4px] border-[#637AA4] h-full">                           
+                        <div class=" grid grid-cols-1 content-between justify-between">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Develop story and values that aligns with personal values beliefs.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Develop story and values that aligns with personal values beliefs.</p>
                             </div>
-                            <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right">
+                            <img src="./images/icon2.png" alt="" class="w-auto h-28 md:w-[12vw] md:h-auto ml-auto">
                             
                         </div>
                         
@@ -85,23 +85,23 @@
             <!-- END : Number 1 -->
 
             <!-- START : Number 2 -->
-            <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
+            <li class="text-2xl md:text-[2vw] leading-[2.4vw] grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 <div></div>
                 <div class="flex">
-                    <p class="text-[#123666] text-4xl">2.</p>
-                    <h2 class="text-[#123666] ml-2 pr-[7.3vw] text-4xl">Uh-oh! You’ve got a problem. How do you solve it?</h2>
+                    <p class="text-[#123666] text-4xl md:text-[3vw] md:leading-[8vh]">2.</p>
+                    <h2 class="text-[#123666] ml-2 pr-[7.3vw] text-4xl md:text-[3vw] md:leading-[8vh]">Uh-oh! You’ve got a problem. How do you solve it?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 md:gap-[1.5vw] items-stretch">
                 <div class="relative">
                     <input type="radio" id="num2a" name="num2" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num2a" class="inline-flex  justify-between w-full p-5 text-white bg-[#637AA4]  rounded-lg cursor-pointer dark:hover:text-white    hover:bg-gray-100 dark:text-white dark:bg-[#637AA4] dark:hover:bg-gray-400 dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#637AA4] h-full">                           
+                    <label for="num2a" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#637AA4]  rounded-lg md:rounded-[2.5vw] cursor-pointer dark:hover:text-white     dark:text-white dark:bg-[#637AA4]  dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#637AA4] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg">
-                                <p class="text-2xl">Try to find and fix the root of the problem as fast as possible.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw] ">Try to find and fix the root of the problem as fast as possible.</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto invisible">
 
                         </div>
                         
@@ -111,10 +111,10 @@
                 <div class="relative ">
                     <input type="radio" id="num2b" name="num2" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num2b" class="inline-flex  justify-between w-full p-5 text-black bg-[#EACCCA]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-black dark:bg-[#EACCCA] dark:hover:bg-gray-700 transition-all border-[4px] border-[#EACCCA] h-full">                           
+                    <label for="num2b" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#EACCCA]  rounded-lg md:rounded-[2.5vw] cursor-pointer    dark:text-black dark:bg-[#EACCCA]  transition-all border-[4px] border-[#EACCCA] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Focus on damage control first. My brand image is the most important</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Focus on damage control first. My brand image is the most important</p>
                             </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
@@ -125,10 +125,10 @@
                 <div class="relative">
                     <input type="radio" id="num2c" name="num2" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num2c" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-gray-700 transition-all border-[4px] border-[#D2FF3A] h-full">                           
+                    <label for="num2c" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#D2FF3A]  rounded-lg md:rounded-[2.5vw] cursor-pointer   500   dark:text-black dark:bg-[#D2FF3A]  transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Find a way to avoid the problem.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Find a way to avoid the problem.</p>
                             </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
@@ -140,26 +140,26 @@
             <!-- END : Number 2 -->
 
             <!-- START : Number 3 -->
-            <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
+            <li class="text-2xl md:text-[2vw] leading-[2.4vw] grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 
                 <div class="flex">
-                    <p class="text-[#0092FB] text-4xl">3.</p>
-                    <h2 class="text-[#0092FB] ml-2 text-4xl">What will be your main product or service or brand unique aspect?</h2>
+                    <p class="text-[#0092FB] text-4xl md:text-[3vw] md:leading-[8vh]">3.</p>
+                    <h2 class="text-[#0092FB] ml-2 text-4xl md:text-[3vw] md:leading-[8vh]">What will be your main product or service or brand unique aspect?</h2>
                 </div>
                 <div class="mt-[8vh] md:mt-0">
                     <img src="./images/vector1.png" alt="" class="w-[50vw] md:w-[15vw] ml-[8vw]">
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 gap-5 md:gap-[1.5vw] items-stretch">
                 <div class="relative">
                     <input type="radio" id="num3a" name="num3" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num3a" class="inline-flex  justify-between w-full p-5 text-black bg-[#ECE7E3]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#ECE7E3] dark:hover:bg-gray-400 dark:hover:border-gray-bg-gray-400 transition-all border-[4px] border-[#ECE7E3] h-full">                           
+                    <label for="num3a" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#ECE7E3]  rounded-lg md:rounded-[2.5vw] cursor-pointer dark:hover:text-black     dark:text-black dark:bg-[#ECE7E3]  dark:hover:border-gray-bg-gray-400 transition-all border-[4px] border-[#ECE7E3] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg">
-                                <p class="text-2xl">High-quality product designed by experts and specialists.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">High-quality product designed by experts and specialists.</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto invisible">
 
                         </div>
                         
@@ -169,12 +169,12 @@
                 <div class="relative ">
                     <input type="radio" id="num3b" name="num3" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num3b" class="inline-flex  justify-between w-full p-5 text-white bg-[#0092FB]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#0092FB] dark:hover:bg-gray-700 transition-all border-[4px] border-[#0092FB] h-full">                           
+                    <label for="num3b" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#0092FB]  rounded-lg md:rounded-[2.5vw] cursor-pointer    dark:text-white dark:bg-[#0092FB]  transition-all border-[4px] border-[#0092FB] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Creative and out of the box concept and visual.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Creative and out of the box concept and visual.</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto invisible">
 
                         </div>
                         
@@ -184,10 +184,10 @@
                 <div class="relative">
                     <input type="radio" id="num3c" name="num3" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num3c" class="inline-flex  justify-between w-full p-5 text-white bg-[#123666]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-white dark:bg-[#123666] dark:hover:bg-gray-700 transition-all border-[4px] border-[#123666] h-full">                           
+                    <label for="num3c" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#123666]  rounded-lg md:rounded-[2.5vw] cursor-pointer   500   dark:text-white dark:bg-[#123666]  transition-all border-[4px] border-[#123666] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">My ‘brand’ can help people to be better or solve their problems in life.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">My ‘brand’ can help people to be better or solve their problems in life.</p>
                             </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
@@ -199,23 +199,23 @@
             <!-- END : Number 3 -->
 
             <!-- START : Number 4 -->
-            <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
+            <li class="text-2xl md:text-[2vw] leading-[2.4vw] grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 <div></div>
                 <div class="flex">
-                    <p class="text-[#637AA4] text-4xl">4.</p>
-                    <h2 class="text-[#637AA4] ml-2 pr-[7.3vw] text-4xl">You’re thinking of adding a team member, what do you look for the most?</h2>
+                    <p class="text-[#637AA4] text-4xl md:text-[3vw] md:leading-[8vh]">4.</p>
+                    <h2 class="text-[#637AA4] ml-2 pr-[7.3vw] text-4xl md:text-[3vw] md:leading-[8vh]">You’re thinking of adding a team member, what do you look for the most?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 md:gap-[1.5vw] items-stretch">
                 <div class="relative">
                     <input type="radio" id="num4a" name="num4" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num4a" class="inline-flex  justify-between w-full p-5 text-black bg-[#0092FB]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#0092FB] dark:hover:bg-gray-400 dark:hover:border-gray-4bg-gray-400 transition-all border-[4px] border-[#0092FB] h-full">                           
+                    <label for="num4a" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#0092FB]  rounded-lg md:rounded-[2.5vw] cursor-pointer dark:hover:text-black     dark:text-black dark:bg-[#0092FB]  dark:hover:border-gray-4bg-gray-400 transition-all border-[4px] border-[#0092FB] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg">
-                                <p class="text-2xl">They have to be creative and can think out side the box for solutions.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">They have to be creative and can think out side the box for solutions.</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto invisible">
 
                         </div>
                         
@@ -225,10 +225,10 @@
                 <div class="relative ">
                     <input type="radio" id="num4b" name="num4" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num4b" class="inline-flex  justify-between w-full p-5 text-white bg-[#123666]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#123666] dark:hover:bg-gray-700 transition-all border-[4px] border-[#123666] h-full">                           
+                    <label for="num4b" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#123666]  rounded-lg md:rounded-[2.5vw] cursor-pointer    dark:text-white dark:bg-[#123666]  transition-all border-[4px] border-[#123666] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Skills and experience are number one.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Skills and experience are number one.</p>
                             </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
@@ -239,10 +239,10 @@
                 <div class="relative">
                     <input type="radio" id="num4c" name="num4" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num4c" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-gray-700 transition-all border-[4px] border-[#D2FF3A] h-full">                           
+                    <label for="num4c" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#D2FF3A]  rounded-lg md:rounded-[2.5vw] cursor-pointer   500   dark:text-black dark:bg-[#D2FF3A]  transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Young, fresh, and motivated.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Young, fresh, and motivated.</p>
                             </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
@@ -254,26 +254,26 @@
             <!-- END : Number 4 -->
 
             <!-- START : Number 5 -->
-            <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw] relative z-20">
+            <li class="text-2xl md:text-[2vw] leading-[2.4vw] grid md:grid-cols-2 mt-[15vh] md:mt-[10vw] relative z-20">
                 <div class="flex">
-                    <p class="text-[#2551CF] text-4xl">5.</p>
-                    <h2 class="text-[#2551CF] ml-2 text-4xl"> What do you think will be the biggest challenge in managing your brand?</h2>
+                    <p class="text-[#2551CF] text-4xl md:text-[3vw] md:leading-[8vh]">5.</p>
+                    <h2 class="text-[#2551CF] ml-2 text-4xl md:text-[3vw] md:leading-[8vh]"> What do you think will be the biggest challenge in managing your brand?</h2>
                 </div>
 
                 <div class="mt-[9vh] md:mt-0">
                     <img src="./images/vector2.png" alt="" class="w-[50vw] md:w-[12vw] ml-[8vw]">
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-[-3.9vw] md:mt-[-1vw] gap-5 items-stretch relative z-10">
+            <div class="grid md:grid-cols-3 mt-[-3.9vw] md:mt-[-1vw] gap-5 md:gap-[1.5vw] items-stretch relative z-10">
                 <div class="relative">
                     <input type="radio" id="num5a" name="num5" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num5a" class="inline-flex  justify-between w-full p-5 text-black bg-[#EACCCA]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#EACCCA] dark:hover:bg-gray-400 dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#EACCCA] h-full">                           
+                    <label for="num5a" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#EACCCA]  rounded-lg md:rounded-[2.5vw] cursor-pointer dark:hover:text-black     dark:text-black dark:bg-[#EACCCA]  dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#EACCCA] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg">
-                                <p class="text-2xl">Being forced to ‘sell out’ by joining the trend.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Being forced to ‘sell out’ by joining the trend.</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto invisible">
 
                         </div>
                         
@@ -283,10 +283,10 @@
                 <div class="relative ">
                     <input type="radio" id="num5b" name="num5" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num5b" class="inline-flex  justify-between w-full p-5 text-white bg-[#02076F]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-white dark:bg-[#02076F] dark:hover:bg-gray-700 transition-all border-[4px] border-[#02076F] h-full">                           
+                    <label for="num5b" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#02076F]  rounded-lg md:rounded-[2.5vw] cursor-pointer    dark:text-white dark:bg-[#02076F]  transition-all border-[4px] border-[#02076F] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">To get my audience to have high level of trust in  my brand and products or services.</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">To get my audience to have high level of trust in  my brand and products or services.</p>
                             </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
@@ -297,10 +297,10 @@
                 <div class="relative">
                     <input type="radio" id="num5c" name="num5" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num5c" class="inline-flex  justify-between w-full p-5 text-black bg-[#CED5EF]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-black dark:bg-[#CED5EF] dark:hover:bg-gray-700 transition-all border-[4px] border-[#CED5EF] h-full">                           
+                    <label for="num5c" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#CED5EF]  rounded-lg md:rounded-[2.5vw] cursor-pointer   500   dark:text-black dark:bg-[#CED5EF]  transition-all border-[4px] border-[#CED5EF] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Create the best team for the greatest result</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Create the best team for the greatest result</p>
                             </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
@@ -312,23 +312,23 @@
             <!-- END : Number 5 -->
 
             <!-- START : Number 6 -->
-            <li class="text-2xl grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
+            <li class="text-2xl md:text-[2vw] leading-[2.4vw] grid md:grid-cols-2 mt-[15vh] md:mt-[10vw]">
                 <div></div>
                 <div class="flex">
-                    <p class="text-[#02076F] text-4xl">6.</p>
-                    <h2 class="text-[#02076F] ml-2 pr-[8vw] text-4xl">Congrats! Your ‘brand’ took off successfully. How will you measure success?</h2>
+                    <p class="text-[#02076F] text-4xl md:text-[3vw] md:leading-[8vh]">6.</p>
+                    <h2 class="text-[#02076F] ml-2 pr-[8vw] text-4xl md:text-[3vw] md:leading-[8vh]">Congrats! Your ‘brand’ took off successfully. How will you measure success?</h2>
                 </div>
             </li>
-            <div class="grid md:grid-cols-3 mt-16 gap-5 items-stretch">
+            <div class="grid md:grid-cols-3 mt-16 gap-5 md:gap-[1.5vw] items-stretch">
                 <div class="relative">
                     <input type="radio" id="num6a" name="num6" value="sage" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num6a" class="inline-flex  justify-between w-full p-5 text-black bg-[#CED5EF]  rounded-lg cursor-pointer dark:hover:text-black    hover:bg-gray-100 dark:text-black dark:bg-[#CED5EF] dark:hover:bg-gray-400 dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#CED5EF] h-full">                           
+                    <label for="num6a" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#CED5EF]  rounded-lg md:rounded-[2.5vw] cursor-pointer dark:hover:text-black     dark:text-black dark:bg-[#CED5EF]  dark:hover:border-graybg-gray-400 transition-all border-[4px] border-[#CED5EF] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg">
-                                <p class="text-2xl">Being acknowledged as credible and also trustworthy</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Being acknowledged as credible and also trustworthy</p>
                             </div>
-                            <img src="./images/icon3.png" alt="" class="w-32 h-auto mx-auto invisible ">
+                            <img src="./images/icon3.png" alt="" class="w-48 md:w-[17vw] h-auto mx-auto invisible">
 
                         </div>
                         
@@ -338,10 +338,10 @@
                 <div class="relative ">
                     <input type="radio" id="num6b" name="num6" value="creator" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num6b" class="inline-flex  justify-between w-full p-5 text-black bg-[#D2FF3A]  rounded-lg cursor-pointer dark:hover:text-gray-300  hover:bg-gray-100 dark:text-black dark:bg-[#D2FF3A] dark:hover:bg-gray-700 transition-all border-[4px] border-[#D2FF3A] h-full">                           
+                    <label for="num6b" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-black bg-[#D2FF3A]  rounded-lg md:rounded-[2.5vw] cursor-pointer    dark:text-black dark:bg-[#D2FF3A]  transition-all border-[4px] border-[#D2FF3A] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">High brand awareness, everyone knows my brand</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">High brand awareness, everyone knows my brand</p>
                             </div>
                             <img src="./images/icon1.png" alt="" class="w-20 h-auto ml-auto invisible">
                         </div>
@@ -352,10 +352,10 @@
                 <div class="relative">
                     <input type="radio" id="num6c" name="num6" value="outlaw" class="hidden peer" required />
                     <img src="./images/choosen.png" alt="" class="absolute w-[20vw] h-[20vw] md:w-[12vw] top-0 left-[0] right-[0] bottom-0 m-auto md:h-[12vw] object-cover  invisible peer-checked:visible">
-                    <label for="num6c" class="inline-flex  justify-between w-full p-5 text-white bg-[#02076F]  rounded-lg cursor-pointer dark:hover:text-gray-300  500  hover:bg-gray-100 dark:text-white dark:bg-[#02076F] dark:hover:bg-gray-700 transition-all border-[4px] border-[#02076F] h-full">                           
+                    <label for="num6c" class="inline-flex  justify-between w-full p-5 md:p-[1.7vw] text-white bg-[#02076F]  rounded-lg md:rounded-[2.5vw] cursor-pointer     dark:text-white dark:bg-[#02076F]  transition-all border-[4px] border-[#02076F] h-full">                           
                         <div class="block">
                             <div class="w-full text-lg ">
-                                <p class="text-2xl">Making an impact on the world and people</p>
+                                <p class="text-2xl md:text-[2vw] leading-[2.4vw]">Making an impact on the world and people</p>
                             </div>
                             <img src="./images/icon2.png" alt="" class="w-auto h-28  float-right invisible">
                             
@@ -368,35 +368,35 @@
 
         </ol>
 
-        <button class="mt-10 px-7 py-2 bg-blue-600 rounded-lg text-white text-lg" onclick="findAnswer()">Finish</button>
+        <button class="mt-10 md:mt-[3.6vh] px-7 md:px-[2.8vw] py-2 md:py-[2vh] bg-blue-600 rounded-lg md:rounded-[2.5vw] text-white text-lg md:text-[1.8vw]" onclick="findAnswer()">Finish</button>
     </section>
     <!-- END : Question Section -->
 
 
     <!-- START : Answer Section -->
-    <section class="px-6 py-32 md:px-16 md:py-24 bg-[#ECE7E3]  hidden text-center" id="answerBox">
+    <section class="px-6 py-32 md:px-16 md:py-24 bg-[#ECE7E3] hidden text-center" id="answerBox">
         <div class="m-auto w-full mb-20">
             <div class="grid md:grid-cols-3 items-center">
-                <p class="text-center md:text-left text-2xl">You're ......</p>
-                <h2 class="text-center text-3xl mt-4 md:mt-0 font-bold capitalize" id="resultTitle">Sage</h2>
+                <p class="text-center md:text-left text-2xl md:text-[2vw] text-[#123666]">You're a ......</p>
+                <h2 class="text-center text-3xl md:text-[3.6vw] mt-4 md:mt-0 font-bold capitalize text-[#123666]" id="resultTitle">Sage</h2>
             </div>
 
             <!-- Result Desctition -->
-            <div class="bg-[#123666] px-10 py-5 mt-16 w-full md:w-1/2 rounded-xl mx-auto text-center text-[#ECE7E3]">
-                <h3 >Your ‘Brand’ as movies: </h3>
-                <p class="font-bold" id="movie">Dead Poets Society, Extraordinary Attorney Woo, Imitation Game, To Kill A Mockingbird</p>
+            <div class="bg-[#123666] px-10 md:px-[4vw] py-5 md:py-[4vh] mt-16 md:mt-[9vh] w-full md:w-1/2 rounded-xl mx-auto text-center text-[#ECE7E3]">
+                <h3 class="text-lg md:text-[1.2vw]" >Your ‘Brand’ as movies: </h3>
+                <p class="font-bold mt-[1vh] text-lg md:leading-[4vh] md:text-[1.2vw]" id="movie">Dead Poets Society, Extraordinary Attorney Woo, Imitation Game, To Kill A Mockingbird</p>
             </div>
-            <div class="bg-[#D2FF3A] px-10 py-5 w-full md:w-1/2 rounded-xl mx-auto text-center text-[#000]">
-                <h3>The audience calls you:</h3>
-                <p class="font-bold" id="call">The Smart One, The Informative One, Trusted Source</p>
-                <p class="text-[10px] leading-[3vh] mt-4" id="desc"> You are all about appearing credible and trusted. You love sharing what you know to the audience in almost a guiding way, wanting them to be wiser in choosing brands (while hinting at yourself as the most trusted)</p>
+            <div class="bg-[#D2FF3A] px-10 md:px-[4vw] py-5 md:py-[4vh] w-full md:w-1/2 rounded-xl mx-auto text-center text-[#000]">
+                <h3 class="text-lg md:text-[1.2vw]">The audience calls you:</h3>
+                <p class="font-bold mt-[1vh] text-lg md:leading-[4vh] md:text-[1.2vw]" id="call">The Smart One, The Informative One, Trusted Source</p>
+                <p class="text-[10px] md:text-[1vw] leading-[3vh] mt-4" id="desc"> You are all about appearing credible and trusted. You love sharing what you know to the audience in almost a guiding way, wanting them to be wiser in choosing brands (while hinting at yourself as the most trusted)</p>
             </div>
-            <div class="bg-[#0092FB] px-10 py-5 w-full md:w-1/2 rounded-xl mx-auto text-center text-[#ECE7E3]">
-                <h3 >Your weakness: </h3>
-                <p class="font-bold" id="weak">Need thorough research, might appear too opinionated on some topics</p>
+            <div class="bg-[#0092FB] px-10 md:px-[4vw] py-5 md:py-[4vh] w-full md:w-1/2 rounded-xl mx-auto text-center text-[#ECE7E3]">
+                <h3 class="text-lg md:text-[1.2vw]">Your weakness: </h3>
+                <p class="font-bold mt-[1vh] text-lg md:leading-[4vh] md:text-[1.2vw]" id="weak">Need thorough research, might appear too opinionated on some topics</p>
             </div>
         </div>
-        <a href="" class="px-4 py-1 text-xs border-2 border-[#0030ff] text-[#0030ff] hover:border-none hover:bg-[#0030ff] hover:text-white transition-all w-fit rounded-full mx-auto">More Quiz By Avond Studio</a>
+        <a href="" class="px-4 md:px-[1.4vw] py-1 md:py-[1vh] text-xs md:text-[1vw] border-2 border-[#0030ff] text-[#0030ff] hover:border-none hover:bg-[#0030ff] hover:text-white transition-all w-fit rounded-full mx-auto">More Quiz By Avond Studio</a>
     </section>
     <!-- END : Answer Section -->
 
